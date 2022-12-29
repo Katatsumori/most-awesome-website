@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="try-styles/header.css">
+    <link rel="stylesheet" href="try-styles/general.css">
+    <link rel="stylesheet" href="try-styles/home.css">
+
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .parent {
+        position: relative;
+        z-index: 99;
+        height: 400px;
+        width: 400px;
+        background-color: lightskyblue;
+      }
+
+      .box {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        border: 2px solid black;
+        right: -2px;
+        bottom: 75px
+      }
+
+      .child {
+        height: 50%;
+        width: 50%;
+        background-color: lightpink;
+        z-index: 2;
+
+        animation: game 1s cubic-bezier(0.15, 0.77, 0.62, 0.92) forwards infinite alternate;
+      }
+
+      body:active .child {
+        animation-play-state: paused;
+      }
+
+      @keyframes game {
+        0% {
+          transform: translateX(0);
+        }
+
+        33% {
+          transform: translateY(100%);
+        }
+
+        66% {
+          transform: translateX(100%) translateY(100%);
+        }
+
+        100% {
+          transform: translateX(100%);
+        }
+      }
+         
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <a href="http://127.0.0.1:5500/most-amazing-website/try-again.html">Home</a>
+      <a href="http://127.0.0.1:5500/most-amazing-website/gallery.html">Gallery</a>
+      <a href="http://127.0.0.1:5500/most-amazing-website/animation-game.html">PLAY</a>
+      <a href="http://127.0.0.1:5500/most-amazing-website/shop.html">Shop</a>
+    </header>
+
+    <main>
+      <div class="parent">
+        <div class="child"></div>
+        <div class="box"></div>
+      </div>
+    </main>
+    
+
+    <div class="creature">
+      <a href="http://127.0.0.1:5500/most-amazing-website/cats.html"><img src="waving.jpg"></a>
+    </div>    
+
+
+
+  </body>
+</html>

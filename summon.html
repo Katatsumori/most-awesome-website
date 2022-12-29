@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUMMON</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="try-styles/header.css">
+    <link rel="stylesheet" href="try-styles/general.css">
+    <link rel="stylesheet" href="try-styles/summon.css">
+
+  </head>
+  <body background="shop/magic.webp">
+    
+    <div class="form-box">
+    
+      <form>
+        <section>
+          <h1>Form</h1>
+          <p>
+            Hello beautiful hooman!
+          </p>
+          <p>
+            Here's a form I made for you, please fill all fields with dandelions
+            and prancing ponies. Or answers.
+          </p>
+    
+        </section>
+        <section>
+          <label for="f-name">First name&#58;</label>
+          <br>
+          <input name ="f-name" type="text" id="f-name" placeholder="Enter your first name">
+          <br>
+          <label for="l-name">Last name&#58;</label>
+          <br>
+          <input name ="l-name" type="text" id="l-name" placeholder="Enter your last name">
+          <br>
+          <label for="date">Date of something&#58;</label>
+          <section class="date" id="date">
+            <input name="date-d" type="number" placeholder="DD" min="1" max="31">
+            <select name="date-m">
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sept</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12">Dec</option>
+            </select>
+            <input name="date-y" type="number" placeholder="YYYY" min="1" max="31">
+            <br>
+          </section>
+    
+    
+          <section class="email-nr-section">
+            <div class="email-nr">
+              <label for="email">Email&#58;</label>
+              <br>
+              <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <div class="email-nr">
+              <label for="phone">Phone nr&#58;</label>
+              <br>
+              <input type="number" name="phone" placeholder="tel" id="phone">
+            </div>
+          </section>
+          <section class="deal">
+            <label for="year">How many years will you trade?</label>
+            <br>
+            <input type="number" name="year" id="year">
+            <br>
+            <span>
+              Do you agree?
+            </span>
+            <br>
+            <input type="radio" name="yes" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="yes" id="yea">
+            <label for="yea">Still yes</label>
+            <br>
+          
+            <span>Have you ever been told that you look like a llama?</span><br>
+            <input type="radio" name="answer" value="Yes" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="answer" value="No" id="not">
+            <label for="not">Not yet</label>
+
+          </section>
+          <label for="poem">Write me a poem &#58;&rpar;</label>
+          <br>
+          <textarea name="poem" id="poem" cols="20" rows="10" maxlength="100">
+            no cheating!
+          </textarea>
+    
+        </section>
+        
+    
+    
+        <section class="fake-buttons">
+          <button class="first" type="button">Submit</button>
+          <button class="second" type="button">Submit</button>
+          <p>hahaha</p>
+        </section>
+        <br><br>
+      
+        <input class="real-button" type="submit" value="Actually Submit">
+           
+    
+      </form>
+  </div>
+
+</body>
+</html>
+
+<!-- 
+  dropdown menu/datalist of what you want to get
+  name field
+  email field
+  phone nr field
+  how many years will you serve me
+  do you accept?
+  write me a poem 
+  submit - evade
+  submit-->
